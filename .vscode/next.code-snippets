@@ -1,0 +1,52 @@
+{
+  "nextapi": {
+    "prefix": "napi",
+    "body": [
+      "import { NextRequest, NextResponse } from \"next/server\"",
+      "",
+      "export async function ${1}(req: NextRequest) {",
+      "  try {",
+      "    return NextResponse.json({ message: 'ok' });",
+      "  } catch (err: any) {",
+      "    return NextResponse.json({ error: err.message });",
+      "  }",
+      "}"
+    ],
+    "description": "next-api"
+  },
+  "nextpage": {
+    "prefix": "npage",
+    "body": [
+      "export default function Page() {",
+      " return ("
+      "   <div>Page</div>"
+      " )"
+      "};"
+    ],
+    "description": "next-page"
+  },
+  "nextcomponent": {
+    "prefix": "ncomp",
+    "body": [
+      "interface Props {",
+      ""
+      "};",
+      "",
+      "export function Component() {",
+      " return (",
+      "   <div>Component</div>"
+      " )"
+      "};",
+    ],
+    "description": "next-component"
+  },
+  "nexthooks": {
+    "prefix": "nhooks",
+    "body": [
+      "export function hooks() {"
+      " return {};"
+      "};"
+    ],
+    "description": "next-hooks"
+  }
+}
