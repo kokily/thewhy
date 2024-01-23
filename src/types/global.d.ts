@@ -76,4 +76,13 @@ declare global {
     thumbnail: string;
     tags: Array<string>;
   }
+
+  // Home Interface
+  interface HomeLinks {
+    id: number;
+    url: string;
+    img: string;
+    title: string;
+    sub: string;
+  }
 }
