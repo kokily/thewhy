@@ -85,4 +85,17 @@ declare global {
     title: string;
     sub: string;
   }
+
+  // Location Interface
+  interface Window {
+    kakao: any;
+  }
+
+  // Contact Interface
+  interface SendMailPayload {
+    name: string;
+    email: string;
+    subject: string;
+    body: string;
+  }
 }
