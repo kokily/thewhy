@@ -4,6 +4,7 @@ import type { PropsWithChildren } from 'react';
 import styled from 'styled-components';
 
 import { Header } from './header/Header';
+import { Footer } from './footer/Footer';
 
 export function PageTemplate({ children }: PropsWithChildren) {
   return (
@@ -14,7 +15,7 @@ export function PageTemplate({ children }: PropsWithChildren) {
         <PageChildBox>{children}</PageChildBox>
       </PageLayout>
 
-      <div>Footer</div>
+      <Footer />
     </PageContainer>
   );
 }

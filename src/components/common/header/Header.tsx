@@ -1,9 +1,15 @@
 import { useEffect, useState } from 'react';
 import styled, { css } from 'styled-components';
+import localFont from 'next/font/local';
 
 import { media } from '@/helper/client/styles';
 import { HeaderTop } from './head/HeaderTop';
 import { Navigation } from './nav/Navigation';
+
+const yoon320 = localFont({
+  src: '../../../../public/fonts/YDIYGO320.woff2',
+  display: 'swap',
+});
 
 export function Header() {
   const [move, setMove] = useState(0);
@@ -21,7 +27,7 @@ export function Header() {
   });
 
   return (
-    <HeaderContainer>
+    <HeaderContainer className={yoon320.className}>
       <HeaderLayout move={move}>
         <HeaderTop />
       </HeaderLayout>
