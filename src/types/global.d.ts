@@ -98,4 +98,18 @@ declare global {
     subject: string;
     body: string;
   }
+
+  // Education Interface
+  interface ListType {
+    img: string;
+    list: Array<string>;
+    end?: boolean;
+  }
+
+  interface EducationType {
+    img: string;
+    title: string;
+    body: string;
+    list: Array<ListType>;
+  }
 }
