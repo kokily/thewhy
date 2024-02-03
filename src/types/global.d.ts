@@ -1,3 +1,4 @@
+import type { ChangeEvent, SyntheticEvent } from 'react';
 import NextAuth from 'next-auth/next';
 
 declare module 'next-auth' {
@@ -70,6 +71,11 @@ declare global {
   }
 
   // Stories Interface
+  interface ListStoriesQuery {
+    title?: string;
+    cursor?: string;
+  }
+
   interface AddStoryPayload {
     title: string;
     body: string;

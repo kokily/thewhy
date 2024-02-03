@@ -6,6 +6,8 @@ import QueryWrapper from '@/helper/wrapper/QueryWrapper';
 import StyledWrapper from '@/helper/wrapper/StyledWrapper';
 import ToastWrapper from '@/helper/wrapper/ToastWrapper';
 
+import 'react-toastify/ReactToastify.css';
+
 import { PageTemplate } from '@/components/common/PageTemplate';
 
 const yoon310 = localFont({

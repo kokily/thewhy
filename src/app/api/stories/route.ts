@@ -8,7 +8,7 @@ export async function GET(req: NextRequest) {
     const cursor = getQuery(req, 'cursor');
 
     const cursorObj = cursor === '' ? undefined : { id: cursor };
-    const limit = 9;
+    const limit = 12;
 
     const stories = await db.story.findMany({
       where: {

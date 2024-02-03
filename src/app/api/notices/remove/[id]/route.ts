@@ -6,7 +6,7 @@ export async function DELETE(_: NextRequest, { params: { id } }: any) {
     const notice = await db.notice.findUnique({ where: { id: parseInt(id) } });
 
     if (notice) {
-      await db.notice.delete({ where: { id } });
+      await db.notice.delete({ where: { id: parseInt(id) } });
 
       return NextResponse.json({ message: '삭제 완료' });
     } else {

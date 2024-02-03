@@ -10,5 +10,6 @@ export const config = {
     '/api/stories/add',
     '/api/stories/remove/:path*',
     '/api/stories/update/:path*',
+    '/stories/add',
   ],
 };
