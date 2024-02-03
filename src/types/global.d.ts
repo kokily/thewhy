@@ -118,4 +118,17 @@ declare global {
     body: string;
     list: Array<ListType>;
   }
+
+  // ETC Interface
+  interface OutlineType {
+    title: string;
+    first: {
+      id: number;
+      firstTitle: string;
+      firstChild?: {
+        secondTitle: string;
+        secondChild?: string[];
+      }[];
+    }[];
+  }
 }
