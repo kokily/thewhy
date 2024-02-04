@@ -28,10 +28,10 @@ export const authOptions: NextAuthOptions = {
 
         const data = await response.json();
 
-        if (data.error) {
-          return null;
-        } else {
+        if (data) {
           return data;
+        } else {
+          return null;
         }
       },
     }),

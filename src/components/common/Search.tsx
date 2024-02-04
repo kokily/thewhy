@@ -58,7 +58,7 @@ const SearchInput = styled.input`
   padding: 0 20px;
   font-size: 0.9rem;
   border: 1px solid #d0cfce;
-  border-radius: 25px;
+  border-radius: 5px;
   outline: none;
   transition: 0.12s all;
 

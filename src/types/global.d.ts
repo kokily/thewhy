@@ -53,6 +53,14 @@ declare global {
   }
 
   // Questions Interface
+  interface ListQuestionsQueries {
+    title?: string;
+    username?: string;
+    phone?: string;
+    email?: string;
+    cursor?: string;
+  }
+
   interface AddQuestionPayload {
     username: string;
     password: string;

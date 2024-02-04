@@ -6,7 +6,8 @@ export async function DELETE(_: NextRequest, { params: { id } }: any) {
     const question = await db.question.update({
       where: { id },
       data: {
-        reply: undefined,
+        reply: '',
+        updatedAt: new Date(),
       },
     });
 
