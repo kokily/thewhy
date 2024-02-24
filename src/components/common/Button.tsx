@@ -2,9 +2,9 @@ import type { ReactNode } from 'react';
 import styled, { css } from 'styled-components';
 
 interface Props {
-  submit?: boolean;
-  back?: boolean;
-  red?: boolean;
+  $submit?: boolean;
+  $back?: boolean;
+  $red?: boolean;
   onClick?: any;
   children: ReactNode;
 }
@@ -14,9 +14,9 @@ export function Button(props: Props) {
 
   return (
     <ButtonContainer
-      $submit={props.submit}
-      $back={props.back}
-      $red={props.red}
+      $submit={props.$submit}
+      $back={props.$back}
+      $red={props.$red}
       {...htmlProps}
       onClick={(e) => {
         if (htmlProps.onClick) {

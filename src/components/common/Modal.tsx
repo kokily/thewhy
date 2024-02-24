@@ -1,9 +1,10 @@
+import type { SyntheticEvent } from 'react';
 import styled from 'styled-components';
 import { Button } from './Button';
 
 interface Props {
   visible: boolean;
-  onConfirm: () => void;
+  onConfirm: (e: SyntheticEvent) => void;
   onCancel: () => void;
 }
 
@@ -17,10 +18,10 @@ export function Modal({ visible, onCancel, onConfirm }: Props) {
         <p>지우시려면 확인을 클릭하세요</p>
 
         <div className="button-group">
-          <Button back onClick={onCancel}>
+          <Button $back={true} onClick={onCancel}>
             취소
           </Button>
-          <Button red onClick={onConfirm}>
+          <Button $red={true} onClick={onConfirm}>
             확인
           </Button>
         </div>

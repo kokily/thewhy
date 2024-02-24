@@ -32,6 +32,7 @@ export function Login({ password, onChange, onLogin }: Props) {
               onChange={onChange}
               onKeyDown={onKeyDown}
               placeholder="비밀번호"
+              autoFocus
               required
             />
           </LoginInputBox>

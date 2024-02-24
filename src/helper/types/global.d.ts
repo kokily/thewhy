@@ -52,6 +52,15 @@ declare global {
     body: string;
   }
 
+  interface NoticeType {
+    title: string;
+    body: string;
+    onBack: () => void;
+    onChangeTitle: (e: ChangeEvent<HTMLTextAreaElement>) => void;
+    onChangeBody: (text: string) => void;
+    onSubmitNotice: (e) => void;
+  }
+
   // Questions Interface
   interface ListQuestionsQueries {
     title?: string;

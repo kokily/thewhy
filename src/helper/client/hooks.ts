@@ -19,9 +19,7 @@ export function useIsMounted() {
 
 export function useMedia(query: string) {
   const [matches, setMatches] = useState<boolean | null>(
-    typeof window !== 'undefined'
-      ? () => window.matchMedia(query).matches
-      : null,
+    typeof window !== 'undefined' ? () => window.matchMedia(query).matches : null,
   );
 
   const isMounted = useIsMounted();
@@ -77,10 +75,11 @@ export function useObserver({
   useEffect(() => {
     if (!target) return;
 
-    const observer: IntersectionObserver = new IntersectionObserver(
-      onIntersect,
-      { root, rootMargin, threshold },
-    );
+    const observer: IntersectionObserver = new IntersectionObserver(onIntersect, {
+      root,
+      rootMargin,
+      threshold,
+    });
 
     observer.observe(target);
 

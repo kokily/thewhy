@@ -1,3 +1,4 @@
+import type { SyntheticEvent } from 'react';
 import styled from 'styled-components';
 import { Modal } from './Modal';
 import { media } from '@/helper/client/style';
@@ -5,7 +6,7 @@ import { media } from '@/helper/client/style';
 interface Props {
   modal: boolean;
   onRemoveClick: () => void;
-  onConfirm: () => void;
+  onConfirm: (e: SyntheticEvent) => void;
   onCancel: () => void;
   onUpdate: () => void;
 }
