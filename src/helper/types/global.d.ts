@@ -70,7 +70,7 @@ declare global {
     phone?: string;
   }
 
-  interface RemoveQuestionPayload {
+  interface ModifyQuestionPayload {
     password?: string;
   }
 
