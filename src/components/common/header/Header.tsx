@@ -29,7 +29,7 @@ export function Header() {
 
   return (
     <HeaderContainer className={yoon320.className}>
-      <HeaderLayout move={move}>
+      <HeaderLayout $move={move}>
         <HeaderTop />
       </HeaderLayout>
 
@@ -54,7 +54,7 @@ const HeaderContainer = styled.header`
   background-color: white;
 `;
 
-const HeaderLayout = styled.div<{ move: number }>`
+const HeaderLayout = styled.div<{ $move: number }>`
   display: flex;
   justify-content: center;
   width: 1110px;
@@ -70,7 +70,7 @@ const HeaderLayout = styled.div<{ move: number }>`
   }
 
   ${(props) =>
-    props.move > 80 &&
+    props.$move > 80 &&
     css`
       height: 70px;
     `}

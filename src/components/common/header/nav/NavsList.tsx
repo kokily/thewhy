@@ -10,7 +10,7 @@ interface Props {
 
 export function NavsList({ toggle, isSmall }: Props) {
   return (
-    <NavsListContainer toggle={toggle}>
+    <NavsListContainer $toggle={toggle}>
       <NavsListUl className="menu">
         {NavMenu.map((menu) => (
           <NavItem key={menu.id} menu={menu} isSmall={isSmall} />
@@ -22,8 +22,8 @@ export function NavsList({ toggle, isSmall }: Props) {
 
 // Styles
 const NavsListContainer = styled.div<{
-  toggle?: boolean;
-  isSmall?: boolean;
+  $toggle?: boolean;
+  $isSmall?: boolean;
 }>`
   display: flex;
   justify-content: center;
@@ -43,7 +43,7 @@ const NavsListContainer = styled.div<{
     animation-duration: 0.4s;
 
     ${(props) =>
-      props.toggle &&
+      props.$toggle &&
       css`
         display: flex;
       `};

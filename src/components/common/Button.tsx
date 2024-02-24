@@ -14,9 +14,9 @@ export function Button(props: Props) {
 
   return (
     <ButtonContainer
-      submit={props.submit}
-      back={props.back}
-      red={props.red}
+      $submit={props.submit}
+      $back={props.back}
+      $red={props.red}
       {...htmlProps}
       onClick={(e) => {
         if (htmlProps.onClick) {
@@ -32,9 +32,9 @@ export function Button(props: Props) {
 
 // Styles
 const ButtonContainer = styled.button<{
-  submit?: boolean;
-  back?: boolean;
-  red?: boolean;
+  $submit?: boolean;
+  $back?: boolean;
+  $red?: boolean;
 }>`
   font-size: 1rem;
   font-weight: bold;
@@ -49,7 +49,7 @@ const ButtonContainer = styled.button<{
   }
 
   ${(props) =>
-    props.submit &&
+    props.$submit &&
     css`
       border: 1px solid #06a4ff;
       background: #06a4ff;
@@ -61,7 +61,7 @@ const ButtonContainer = styled.button<{
     `}
 
   ${(props) =>
-    props.back &&
+    props.$back &&
     css`
       border: 1px solid #777;
       background: #777;
@@ -73,7 +73,7 @@ const ButtonContainer = styled.button<{
     `}
     
     ${(props) =>
-    props.red &&
+    props.$red &&
     css`
       border: 1px solid #fa5252;
       background: #fa5252;
