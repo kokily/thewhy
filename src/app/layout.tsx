@@ -5,6 +5,7 @@ import QueryWrapper from '@/helper/wrapper/QueryWrapper';
 import SessionWrapper from '@/helper/wrapper/SessionWrapper';
 import StyledWrapper from '@/helper/wrapper/StyledWrapper';
 import ToastWrapper from '@/helper/wrapper/ToastWrapper';
+import { PageTemplate } from '@/components/common/PageTemplate';
 
 const yoon310 = localFont({
   src: '../../public/fonts/YDIYGO310.woff2',
@@ -55,7 +56,9 @@ export default function RootLayout({
       <body className={yoon310.className}>
         <SessionWrapper>
           <QueryWrapper>
-            <StyledWrapper>{children}</StyledWrapper>
+            <StyledWrapper>
+              <PageTemplate>{children}</PageTemplate>
+            </StyledWrapper>
             <ToastWrapper />
           </QueryWrapper>
         </SessionWrapper>
