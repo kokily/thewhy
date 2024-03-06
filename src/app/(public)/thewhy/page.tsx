@@ -9,7 +9,7 @@ import { Login } from '@/components/thewhy/Login';
 
 export default function LoginPage() {
   const router = useRouter();
-  const { status } = useSession();
+  const { data } = useSession();
 
   // States
   const [password, setPassword] = useState('');
@@ -32,7 +32,7 @@ export default function LoginPage() {
     }
   };
 
-  if (status === 'authenticated') {
+  if (data && data.user) {
     router.replace('/');
   }
 

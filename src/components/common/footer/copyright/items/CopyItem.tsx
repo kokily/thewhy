@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { useMobile } from '@/helper/client/hooks';
+import { useMobile } from '@/helper/client/hooks/useInfinite';
 import { media } from '@/helper/client/style';
 
 export function CopyItem() {

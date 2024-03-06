@@ -19,7 +19,7 @@ export function TopRight() {
         <span
           className="logout"
           onClick={async () =>
-            await signOut({ callbackUrl: '/', redirect: true })
+            await signOut({ callbackUrl: '/thewhy', redirect: true })
           }
         >
           <BiExit size={32} color="#463884" />

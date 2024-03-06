@@ -2,7 +2,7 @@ import { useState, useCallback } from 'react';
 import { IoMdClose } from 'react-icons/io';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import styled from 'styled-components';
-import { useMobile } from '@/helper/client/hooks';
+import { useMobile } from '@/helper/client/hooks/useInfinite';
 import { media } from '@/helper/client/style';
 import { NavsList } from './NavsList';
 

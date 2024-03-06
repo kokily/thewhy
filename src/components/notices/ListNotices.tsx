@@ -6,7 +6,7 @@ import localFont from 'next/font/local';
 import styled, { css } from 'styled-components';
 import { media } from '@/helper/client/style';
 import { useSession } from 'next-auth/react';
-import { useMobile } from '@/helper/client/hooks';
+import { useMobile } from '@/helper/client/hooks/useInfinite';
 import Link from 'next/link';
 import { Search } from '../common/Search';
 import { NoticeContents } from './NoticeContents';

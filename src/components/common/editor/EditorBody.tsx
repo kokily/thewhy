@@ -12,7 +12,7 @@ interface Props {
   onChangeBody: (text: string) => void;
 }
 
-export function EditorBody({ body, onChangeBody }: Props) {
+export default function EditorBody({ body, onChangeBody }: Props) {
   const quillRef = useRef(null);
 
   // Image Upload Function

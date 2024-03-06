@@ -9,7 +9,7 @@ import { toast } from 'react-toastify';
 import styled from 'styled-components';
 import client from '@/helper/client/client';
 import { media } from '@/helper/client/style';
-import { useModal } from '@/helper/client/useModal';
+import { useModal } from '@/helper/client/hooks/useModal';
 import { AdminButtons } from '../common/AdminButtons';
 import { formatDate } from '@/helper/client/utils';
 import { Markdown } from '../common/Markdown';

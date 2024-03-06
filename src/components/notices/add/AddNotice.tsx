@@ -1,8 +1,12 @@
-import { EditorBody } from '@/components/common/editor/EditorBody';
+import dynamic from 'next/dynamic';
+import styled from 'styled-components';
 import { EditorFooter } from '@/components/common/editor/EditorFooter';
 import { EditorTitle } from '@/components/common/editor/EditorTitle';
 import { shadow } from '@/helper/client/style';
-import styled from 'styled-components';
+
+const EditorBody = dynamic(() => import('../../common/editor/EditorBody'), {
+  ssr: false,
+});
 
 interface Props {
   id?: string;

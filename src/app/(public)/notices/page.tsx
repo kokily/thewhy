@@ -8,7 +8,7 @@ import { useInfiniteQuery } from '@tanstack/react-query';
 import useLocalStorage from 'use-local-storage';
 import qs from 'qs';
 import client from '@/helper/client/client';
-import { useObserver } from '@/helper/client/hooks';
+import { useObserver } from '@/helper/client/hooks/useInfinite';
 import { ListNotices } from '@/components/notices/ListNotices';
 
 // API
