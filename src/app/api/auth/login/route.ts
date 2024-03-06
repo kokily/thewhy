@@ -19,12 +19,9 @@ export async function POST(req: NextRequest) {
 
       return NextResponse.json(result);
     } else {
-      return NextResponse.json(
-        { error: '관리자가 없거나 비밀번호가 틀렸습니다.' },
-        { status: 401 },
-      );
+      throw new Error('사용자가 없거나 비밀번호가 틀렸습니다.');
     }
   } catch (err: any) {
-    return NextResponse.json({ error: err.message }, { status: 500 });
+    throw new Error(err);
   }
 }

@@ -9,7 +9,7 @@ export function signJwtAccessToken(
   payload: JwtPayload,
   options: SignOptions = DEFAULT_SIGN_OPTIONS,
 ) {
-  const secretKey = process.env.JWT_SECRET!;
+  const secretKey = process.env.NEXTAUTH_SECRET!;
   const token = jwt.sign(payload, secretKey, options);
 
   return token;
@@ -17,7 +17,7 @@ export function signJwtAccessToken(
 
 export function verifyToken(token: string) {
   try {
-    const secretKey = process.env.JWT_SECRET!;
+    const secretKey = process.env.NEXTAUTH_SECRET!;
     const decoded = jwt.verify(token, secretKey);
 
     return decoded as JwtPayload;

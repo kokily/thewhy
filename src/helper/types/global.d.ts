@@ -100,6 +100,19 @@ declare global {
     tags: Array<string>;
   }
 
+  interface StoryType {
+    title: string;
+    body: string;
+    thumbnail: string;
+    tags: string[];
+    onBack: () => void;
+    onChangeTitle: (e: ChangeEvent<HTMLTextAreaElement>) => void;
+    onChangeBody: (text: string) => void;
+    onChangeTags: (nextTags: string[]) => void;
+    onUploadThumbnail: () => void;
+    onSubmitStory: (e: SyntheticEvent) => void;
+  }
+
   // Home Interface
   interface HomeLinks {
     id: number;

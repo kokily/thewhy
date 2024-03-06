@@ -15,18 +15,15 @@ export const authOptions: NextAuthOptions = {
         },
       },
       async authorize(credentials, _) {
-        const response = await fetch(
-          `${process.env.NEXTAUTH_URL}/api/auth/login`,
-          {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-              password: credentials?.password,
-            }),
+        const response = await fetch(`${process.env.NEXTAUTH_URL}/api/auth/login`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
           },
-        );
+          body: JSON.stringify({
+            password: credentials?.password,
+          }),
+        });
 
         const data = await response.json();
 
@@ -50,7 +47,7 @@ export const authOptions: NextAuthOptions = {
   pages: {
     signIn: '/thewhy',
   },
-  secret: process.env.NEXTAUTH_SECRET,
+  secret: process.env.NEXTAUTH_SECRET!,
 };
 
 // Query String

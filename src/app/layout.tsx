@@ -7,6 +7,8 @@ import StyledWrapper from '@/helper/wrapper/StyledWrapper';
 import ToastWrapper from '@/helper/wrapper/ToastWrapper';
 import { PageTemplate } from '@/components/common/PageTemplate';
 
+import 'react-toastify/ReactToastify.css';
+
 const yoon310 = localFont({
   src: '../../public/fonts/YDIYGO310.woff2',
   display: 'swap',

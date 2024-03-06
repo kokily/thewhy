@@ -2,6 +2,9 @@
   "name": "thewhy",
   "version": "0.1.0",
   "private": true,
+  "prisma": {
+    "seed": "node --require esbuild-register prisma/seed.ts"
+  },  
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -16,6 +19,8 @@
     "axios": "^1.6.7",
     "bcryptjs": "^2.4.3",
     "date-fns": "^2.29.3",
+    "esbuild": "^0.20.1",
+    "esbuild-register": "^3.5.0",
     "jsonwebtoken": "^9.0.2",
     "marked": "^12.0.0",
     "moment": "^2.30.1",
