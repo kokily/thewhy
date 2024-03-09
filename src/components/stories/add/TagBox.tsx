@@ -21,6 +21,8 @@ const TagsList = memo(
   ),
 );
 
+TagsList.displayName = 'TagsList';
+
 interface Props {
   input: string;
   localTags: Array<string>;

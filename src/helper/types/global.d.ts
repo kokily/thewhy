@@ -83,6 +83,19 @@ declare global {
     password?: string;
   }
 
+  interface QuestionType {
+    username: string;
+    password: string;
+    title: string;
+    body: string;
+    email: string;
+    phone: string;
+    agree: boolean;
+    onChange: (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
+    onToggleAgree: () => void;
+    onSubmitQuestion: (e: SyntheticEvent) => void;
+  }
+
   interface AddReplyPayload {
     reply: string;
   }

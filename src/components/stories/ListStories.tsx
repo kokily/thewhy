@@ -42,7 +42,7 @@ export function ListStories(props: Props) {
       </StoryHeader>
 
       {stories.map((story) => (
-        <StoryCard story={story} onReadStory={props.onReadStory} />
+        <StoryCard key={story.id} story={story} onReadStory={props.onReadStory} />
       ))}
     </StoriesContainer>
   );
