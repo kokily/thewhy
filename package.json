@@ -4,7 +4,7 @@
   "private": true,
   "prisma": {
     "seed": "node --require esbuild-register prisma/seed.ts"
-  },  
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -32,8 +32,10 @@
     "react-dom": "^18",
     "react-icons": "^5.0.1",
     "react-quill": "^2.0.0",
+    "react-slick": "^0.30.2",
     "react-textarea-autosize": "^8.5.3",
     "react-toastify": "^10.0.4",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^6.1.8",
     "use-local-storage": "^3.0.0"
   },
@@ -45,6 +47,7 @@
     "@types/qs": "^6.9.11",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/react-slick": "^0.23.13",
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
     "prisma": "^5.10.2",
