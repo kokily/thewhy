@@ -163,7 +163,7 @@ declare global {
   }
 
   // ETC Interface
-  interface OutlineType {
+  interface CustomDocumentType {
     title: string;
     first: {
       id: number;
