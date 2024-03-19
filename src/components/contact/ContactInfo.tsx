@@ -16,7 +16,8 @@ export function ContactInfo() {
           <li>
             <IoLocationOutline />
             <strong>주소: </strong>
-            경기도 남양주시 다산중앙로19번길 25-23, 에프508호
+            경기도 남양주시 다산중앙로 145번길 15, 8층 802-62호<br />
+            (다산신해센트럴타워 2차)
           </li>
 
           <li>

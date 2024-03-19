@@ -15,7 +15,7 @@ export default function AddStoryPage() {
     onChangeTags,
     onUploadThumbnail,
     onSubmitStory,
-  } = useStory({});
+  } = useStory({ id: null });
 
   return (
     <AddStory

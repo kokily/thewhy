@@ -30,7 +30,7 @@ export function RightContent() {
           <RightList>
             <RightItem>
               <MdKeyboardArrowRight size={17} color="#0088cc" />
-              <Link href="/question">교육문의</Link>
+              <Link href="/questions">교육문의</Link>
             </RightItem>
             <RightItem>
               <MdKeyboardArrowRight size={17} color="#0088cc" />

@@ -38,10 +38,11 @@ export const NavMenu = [
   {
     id: 3,
     title: '커뮤니티',
-    url: '/notice',
-    items: [
-      { id: 0, subTitle: '공지사항', subUrl: '/notices' },
-      { id: 1, subTitle: '교육문의', subUrl: '/questions' },
-    ],
+    url: '/notices',
   },
+  {
+    id: 4,
+    title: '교육문의',
+    url: '/questions'
+  }
 ];

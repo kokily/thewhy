@@ -1,18 +1,5 @@
-import type { Notice } from '@prisma/client';
-
-import client from '@/helper/client/api/client';
 import { ReadNotice } from '@/components/notices/read/ReadNotice';
-
-// Server Side
-export async function getData(id: string): Promise<Notice> {
-  const response = await client.get(`/notices/${id}`);
-
-  if (!response.data) {
-    throw new Error('Failed to fetch data');
-  }
-
-  return response.data;
-}
+import { getData } from '../../_data/getData';
 
 // Metadata
 export async function generateMetadata({ params }: { params: { id: any } }) {

@@ -15,7 +15,7 @@ export default function AddQuestionPage() {
     onChange,
     onToggleAgree,
     onSubmitQuestion,
-  } = useQuestion({});
+  } = useQuestion({ id: null });
 
   return (
     <AddQuestion

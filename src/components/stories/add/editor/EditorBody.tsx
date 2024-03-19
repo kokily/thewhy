@@ -1,3 +1,5 @@
+'use client';
+
 import { useMemo, useRef } from 'react';
 import ReactQuill from 'react-quill';
 import styled from 'styled-components';

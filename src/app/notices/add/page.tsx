@@ -4,8 +4,8 @@ import { AddNotice } from '@/components/notices/add/AddNotice';
 import { useNotice } from '../_hooks/useNotice';
 
 export default function AddNoticePage() {
-  const { title, body, onBack, onChangeBody, onChangeTitle, onSubmitNotice } =
-    useNotice({});
+  const { title, body, onBack, onChangeTitle, onChangeBody, onSubmitNotice } =
+    useNotice({ id: null });
 
   return (
     <AddNotice

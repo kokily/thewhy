@@ -1,19 +1,7 @@
-import type { Story } from '@prisma/client';
 import type { Metadata } from 'next';
 
-import client from '@/helper/client/api/client';
 import { ReadStory } from '@/components/stories/read/ReadStory';
-
-// Server Side
-export async function getData(id: string): Promise<Story> {
-  const response = await client.get(`/stories/${id}`);
-
-  if (!response.data) {
-    throw new Error('Failed to fetch data');
-  }
-
-  return response.data;
-}
+import { getData } from '../../_data/getData';
 
 // Metadata
 export async function generateMetadata({
