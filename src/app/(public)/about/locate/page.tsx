@@ -4,8 +4,8 @@ import { Location } from '@/components/locate/Location';
 import { useEffect } from 'react';
 
 export default function LocatePage() {
-  const latitude = 37.613030445578595;
-  const longitude = 127.1535812801483;
+  const latitude = 37.62540679378858;
+  const longitude = 127.15083423105426;
 
   useEffect(() => {
     const $script = document.createElement('script');
