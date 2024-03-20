@@ -60,6 +60,10 @@ export default function RootLayout({
           name="naver-site-verification"
           content="f3f768e9435f138e44540040fb7a46bd8c6fd427"
         />
+        <meta
+          name="google-site-verification"
+          content="m_pjAMeok3jUr2aJg_qWwvbBFERcYCjiuxWm4YE5_V4"
+        />
       </head>
       <body className={yoon310.className}>
         <SessionWrapper>
