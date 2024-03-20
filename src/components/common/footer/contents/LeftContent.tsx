@@ -1,7 +1,5 @@
-import Link from 'next/link';
 import { ImLocation } from 'react-icons/im';
 import { AiOutlineMail } from 'react-icons/ai';
-
 import styled from 'styled-components';
 import { media } from '@/helper/client/style';
 
@@ -18,13 +16,11 @@ export function LeftContent() {
         <LeftItem>
           <ImLocation size={16} color="#0088cc" />
           <LeftLead>
-            경기도 남양주시 다산중앙로19번길
+            경기도 남양주시 다산중앙로 145번길
             <br />
-            25-23, 에프508호
+            15, 8층 802-62호
             <br />
-            (다산동, 다산진건블루웨일
-            <br />
-            지식산업센터 2차)
+            (다산신해센트럴타워 2차)
           </LeftLead>
         </LeftItem>
       </LeftList>
@@ -37,12 +33,12 @@ export function LeftContent() {
       </LeftList>
 
       <LeftIconsBox>
-        <Link href="/">
+        <a href="https://www.youtube.com/@TV-wj7kk" target="_blank">
           <LeftIcon className="youtube" />
-        </Link>
-        <Link href="/">
+        </a>
+        <a href="https://blog.naver.com/thewhycompany" target="_blank">
           <LeftIcon className="naver" />
-        </Link>
+        </a>
       </LeftIconsBox>
     </LeftContainer>
   );

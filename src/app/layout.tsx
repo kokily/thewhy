@@ -55,6 +55,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
+      <head>
+        <meta
+          name="naver-site-verification"
+          content="f3f768e9435f138e44540040fb7a46bd8c6fd427"
+        />
+      </head>
       <body className={yoon310.className}>
         <SessionWrapper>
           <QueryWrapper>

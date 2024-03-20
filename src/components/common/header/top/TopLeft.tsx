@@ -7,10 +7,10 @@ export function TopLeft() {
       <TopLeftTitle>커뮤니케이션 전문 교육 컨설팅</TopLeftTitle>
 
       <TopLeftIconsBox>
-        <a href="#null">
+        <a href="https://www.youtube.com/@TV-wj7kk" target="_blank">
           <TopLeftIcon className="youtube" />
         </a>
-        <a href="#null">
+        <a href="https://blog.naver.com/thewhycompany" target="_blank">
           <TopLeftIcon className="naver" />
         </a>
       </TopLeftIconsBox>
