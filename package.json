@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "GENERATE_SOURCEMAP=false next build",
     "debug": "next build --debug",
     "start": "next start",
     "lint": "next lint"
