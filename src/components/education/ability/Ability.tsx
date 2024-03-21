@@ -19,11 +19,11 @@ export function Ability() {
   return (
     <AbilityContainer>
       <Image
-        src="/images/education/edu05.png"
+        src="/svg/education.svg"
         width={1110}
         height={296}
         alt="직무역량 강화"
-        priority
+        priority={true}
       />
 
       <AbilityHeader>
@@ -47,7 +47,7 @@ export function Ability() {
           width={825}
           height={738}
           alt="직무역량강화"
-          priority
+          priority={true}
         />
       </AbilityContents>
 

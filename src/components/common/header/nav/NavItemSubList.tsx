@@ -4,11 +4,12 @@ import { media } from '@/helper/client/style';
 
 interface Props {
   item: ItemType;
+  onToggle: () => void;
 }
 
-export function NavItemSubList({ item }: Props) {
+export function NavItemSubList({ item, onToggle }: Props) {
   return (
-    <NavSubListContainer>
+    <NavSubListContainer onClick={onToggle}>
       <Link href={item.subUrl} passHref={true}>
         <NavSubListLinkName>{item.subTitle}</NavSubListLinkName>
       </Link>

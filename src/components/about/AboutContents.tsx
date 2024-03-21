@@ -51,20 +51,16 @@ const ContentsContainer = styled.div`
     width: 100%;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-
-    .text {
-      flex: none !important;
-      width: 100%;
-    }
-
-    .image {
-      display: none;
-    }
   }
 `;
 
 const ContentsLayout = styled.div`
   flex: 0 0 60%;
+
+  ${media.medium} {
+    flex: none !important;
+    width: 100%;
+  }
 `;
 
 const ContentsTitle = styled.h2`
@@ -81,4 +77,8 @@ const ContentsTitle = styled.h2`
 const ContentsImageBox = styled.div`
   flex: 0 0 40%;
   height: auto;
+
+  ${media.medium} {
+    display: none;
+  }
 `;

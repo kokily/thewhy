@@ -1,5 +1,3 @@
-'use client';
-
 import { useState } from 'react';
 import Link from 'next/link';
 import styled from 'styled-components';
@@ -10,9 +8,10 @@ import { NavItemSubList } from './NavItemSubList';
 interface Props {
   menu: MenuType;
   isSmall?: boolean;
+  onToggle: () => void;
 }
 
-export function NavItem({ menu, isSmall }: Props) {
+export function NavItem({ menu, isSmall, onToggle }: Props) {
   const [isOpen, setIsOpen] = useState('');
 
   const onOpen = () => {
@@ -32,23 +31,19 @@ export function NavItem({ menu, isSmall }: Props) {
 
             {isSmall && (
               <>
-                {isOpen ? (
-                  <IoIosArrowUp size={14} />
-                ) : (
-                  <IoIosArrowDown size={14} />
-                )}
+                {isOpen ? <IoIosArrowUp size={14} /> : <IoIosArrowDown size={14} />}
               </>
             )}
           </NavItemOpenButton>
 
           <NavItemList className="hidden">
             {menu.items.map((item) => (
-              <NavItemSubList key={item.id} item={item} />
+              <NavItemSubList key={item.id} item={item} onToggle={onToggle} />
             ))}
           </NavItemList>
         </>
       ) : (
-        <NavItemOpenButton>
+        <NavItemOpenButton onClick={onToggle}>
           <Link href={menu.url} passHref={true}>
             {menu.title}
           </Link>

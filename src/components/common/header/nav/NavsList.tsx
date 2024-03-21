@@ -6,14 +6,15 @@ import { NavItem } from './NavItem';
 interface Props {
   toggle?: boolean;
   isSmall?: boolean;
+  onToggle: () => void;
 }
 
-export function NavsList({ toggle, isSmall }: Props) {
+export function NavsList({ toggle, isSmall, onToggle }: Props) {
   return (
     <NavsListContainer $toggle={toggle}>
       <NavsListUl className="menu">
         {NavMenu.map((menu) => (
-          <NavItem key={menu.id} menu={menu} isSmall={isSmall} />
+          <NavItem key={menu.id} menu={menu} isSmall={isSmall} onToggle={onToggle} />
         ))}
       </NavsListUl>
     </NavsListContainer>

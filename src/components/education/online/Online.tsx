@@ -21,7 +21,7 @@ export function Online() {
   return (
     <OnlineContainer>
       <Image
-        src="/images/education/online.png"
+        src="/svg/online.svg"
         width={1110}
         height={296}
         alt="온라인 교육"

@@ -26,7 +26,7 @@ export function Navigation() {
             )}
           </NavigationMobile>
 
-          <NavsList toggle={toggle} isSmall={isSmall} />
+          <NavsList toggle={toggle} isSmall={isSmall} onToggle={onToggle} />
         </NavigationMobileWrapper>
       ) : (
         <NavsList isSmall={isSmall} />
