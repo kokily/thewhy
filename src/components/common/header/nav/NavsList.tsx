@@ -6,7 +6,7 @@ import { NavItem } from './NavItem';
 interface Props {
   toggle?: boolean;
   isSmall?: boolean;
-  onToggle: () => void;
+  onToggle?: () => void;
 }
 
 export function NavsList({ toggle, isSmall, onToggle }: Props) {
